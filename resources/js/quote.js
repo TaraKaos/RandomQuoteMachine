@@ -69,7 +69,7 @@ class Quote extends React.Component {
         /*
           $('#tumblr-quote').on('click', function() {
         if(!inIframe()) {
-          openURL('https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption='+encodeURIComponent(currentAuthor)+'&content=' + encodeURIComponent(currentQuote)+'&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button');
+          openURL('https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption='+encodeURIComponent(currentAuthor)+'&content=' + encodeURIComponent(currentQuote)+'&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button');
         }
         });
         */
@@ -97,16 +97,16 @@ class Quote extends React.Component {
                         React.createElement("span", { id: "author", style: quoteStyle }, this.state.author)),
 
                     React.createElement("div", { class: "buttons" },
-                        React.createElement("a", { class: "button", id: "tweet-quote", title: "Tweet this quote!", target: "_blank", style: buttonStyle, href: "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + this.state.quote + ' -' + this.state.author },
+                        React.createElement("a", { class: "button", id: "tweet-quote", title: "Tweet this quote!", target: "_blank", style: buttonStyle, href: "https://twitter.com/intent/tweet?hashtags=quotes&text=" + this.state.quote + ' -' + this.state.author },
                             React.createElement("i", { class: "fa fa-twitter" })),
 
-                        React.createElement("a", { class: "button", id: "tumblr-quote", title: "Post this quote on tumblr!", target: "_blank", style: buttonStyle, href: "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" + this.state.author + "&content=" + this.state.quote + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button" },
+                        React.createElement("a", { class: "button", id: "tumblr-quote", title: "Post this quote on tumblr!", target: "_blank", style: buttonStyle, href: "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=" + this.state.author + "&content=" + this.state.quote + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button" },
                             React.createElement("i", { class: "fa fa-tumblr" })),
 
                         React.createElement("button", { class: "button", id: "new-quote", onClick: this.newQuote, style: buttonStyle }, "New quote"))),
 
 
-                React.createElement("div", { class: "footer" }, " by ", React.createElement("a", { href: "https://codepen.io/tarakaos/" }, "tarakaos"))));
+                React.createElement("div", { class: "footer" }, " by ", React.createElement("a", { href: "http://taraford.net/" }, "Tara Ford"))));
 
 
     }
